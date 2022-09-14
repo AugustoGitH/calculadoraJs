@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="/style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="calculadora_container">
+        <div class="display">
+            <p class="supTela"></p>
+            <p class="subtela"></p>
+        </div>
+        <div class="teclado">
+            <div class="grid_row">
+                <button onclick="deletarC()" class="btn_operationSec">C</button>
+                <button onclick="deletarCE()" class="btn_operationSec">CE</button>
+                <button onclick="porcentagem()" class="btn_operationSec">%</button>
+                <button onclick="divisaoBtt(this)" class="btn_operationPrim">÷</button>
+            </div>
+            <div class="grid_row">
+                <button class="btn_number">7</button>
+                <button class="btn_number">8</button>
+                <button class="btn_number">9</button>
+                <button onclick="multiplicacaoBtt(this)" class="btn_operationPrim">×</button>
+            </div>
+            <div class="grid_row">
+                <button class="btn_number">4</button>
+                <button class="btn_number">5</button>
+                <button class="btn_number">6</button>
+                <button onclick="subtracaoBtt(this)"class="btn_operationPrim">-</button>
+            </div>
+            <div class="grid_row">
+                <button class="btn_number">1</button>
+                <button class="btn_number">2</button>
+                <button class="btn_number">3</button>
+                <button onclick="somaBtt(this)"class="btn_operationPrim">+</button>
+            </div>
+            <div class="grid_row_5">
+                <button class="btn_number">0</button>
+                <button class="btn_number">.</button>
+                <button onclick="equalsBtt()" class="btn_operationPrim">=</button>
+            </div>
+        </div>
+    </div>
+    <script src="/script.js"></script>
+</body>
+</html>
