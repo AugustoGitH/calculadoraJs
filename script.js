@@ -82,7 +82,7 @@ function deletarC(){
     estadoButtonOpe = false
 }
 function deletarCE(){
-    let valueString = focusValue.substring(0, focusValue.length - 1)
+    let valueString = String(focusValue).substring(0, focusValue.length - 1)
     focusValue = valueString
     displayFocus_input.innerHTML = focusValue
 }
@@ -112,7 +112,15 @@ function equalizarValores(value01, value02){
     historyValue = ""
     displayHistory_input.innerHTML = historyValue
     focusValue = ""
+    if(String(resultadoValue).length > 10){
+        let num_fac = String(resultadoValue).split("")
+        let resultTratado = []
+        for(let i = 0; i < 10; i++){resultTratado.push(num_fac[i])}
+        resultadoValue =  Number(resultTratado.join(""))
+    }
     focusValue = resultadoValue
     displayFocus_input.innerHTML = focusValue
 
 }
+let num = "12344"
+console.log(num.split("").join(""))

@@ -15,7 +15,7 @@ body{
     max-width: 400px;
     max-height: 2000px;
     background-color: rgb(51, 53, 59);
-    padding: 7rem 1rem 3rem 1rem;
+    padding: 3rem 1rem 3rem 1rem;
     border-radius: 30px;
 }
 @media (max-width: 400px){
@@ -29,12 +29,13 @@ body{
 .display{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: end;
     align-items: end;
     line-height: 2.6rem;
     margin-bottom: 2rem;
     position: relative;
-    height: 60px;
+    height: 140px;
+
 }
 .subtela{
     font-size: 3.6rem;
@@ -43,7 +44,7 @@ body{
     font-size: 1.5rem;
     color: rgb(173, 171, 171);
     position: absolute;
-    top: -45px;
+    top: 0px;
 }
 .teclado{
     display: flex;
